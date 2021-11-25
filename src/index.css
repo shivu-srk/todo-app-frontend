@@ -1,13 +1,124 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  background: #f9fafe;
+  color: #000;
+  scroll-behavior: smooth;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  height: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Inter, Helvetica, Apple Color Emoji, Segoe UI Emoji,
+    NotoColorEmoji, Noto Color Emoji, Segoe UI Symbol, Android Emoji,
+    EmojiSymbols, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Noto Sans, sans-serif;
+  letter-spacing: 1px;
+  font-size: clamp(0.8rem, 1.4vw, 0.9rem);
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background-color: #f0bd66 !important;
+  color: #fff !important;
+}
+
+/* 52B0E9 */
+
+/* 2798da */
+
+:root {
+  --colorPrimary: #03a9f4;
+  --colorSecondary: #bfc8d4;
+  --colorSpanBorder: #1d1e23;
+  --appBlack: #1d2022;
+  --fontLight: #d8d8d8;
+  --blueGradient: linear-gradient(320.66deg, #005ea3 14.75%, #11a8fd 84.81%);
+  --blackGradient: linear-gradient(165deg, #27292d, #17191b);
+  --darkShadow: #181a1b;
+  --lightShadow: #393a3c;
+  --darkLeftLinear: #17191b;
+  --darkRightLinear: #27292d;
+  --blueLeftLinear: #005ea3;
+  --blueRightLinear: #11a8fd;
+}
+
+/* button, p, div, span, label, input, textarea {
+    font-size: 16px;
+} */
+
+button {
+  user-select: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Let's get this party started */
+
+::-webkit-scrollbar {
+  width: 12px;
+  display: none;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: black;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgb(36, 36, 36);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 700px) {
+  * {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+  }
+  *::-webkit-scrollbar {
+    display: none;
+  }
 }
