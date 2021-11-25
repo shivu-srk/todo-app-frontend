@@ -1,7 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { useEffect } from "react";
+import axios from "axios";
 
 function App() {
+  useEffect(() => {
+    axios
+      .post("http://localhost:5000/login", {
+        username: "manager",
+        password: "srk@123",
+      })
+      .then(console.log)
+      .catch(console.error);
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
